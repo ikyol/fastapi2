@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: postgres:11
+    ports:
+      - 32700:5432
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    environment:
+      - DB_NAME=postgres
+      - DB_USER=postgres
+      - DB_PASSWORD=postgres
+      - "POSTGRES_HOST_AUTH_METHOD=trust"
