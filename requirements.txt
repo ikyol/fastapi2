@@ -4,3 +4,6 @@ sqlalchemy
 databases
 databases[postgresql]
 psycopg2-binary
+bcrypt
+passlib
+pydantic[email]
